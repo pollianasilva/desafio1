@@ -7,8 +7,8 @@
 
 https://github.com/pollianasilva/desafio1/assets/140568849/2377f92f-f57a-495a-a21d-3fa316b84146
 
-## Instruções: 
-Crie um novo banco de dados no MySQL e também configure sua senha no arquivo server.js
+## Instruções de Configuração: 
+1. Crie um novo banco de dados no MySQL e também configure sua senha no arquivo server.js
 ```sql
 CREATE DATABASE clinica;
 USE clinica;
@@ -47,18 +47,16 @@ FOREIGN KEY (especialidade_id) REFERENCES especialidades(id)
 );
 ```
 
-- No terminal do VS code instale: 
+2. Instale as dependências necessárias no terminal do VS Code: 
 ```Terminal
 npm install express mysql2 body-parser
 ```
-- E após dê o comando para conectar o servidor ao banco de dados 
+3. Inicie o servidor para conectar ao banco de dados:
 ```Terminal
 node server.js
 ```
-- Abra  no local host: http://localhost:3000/
-
-
-## Descrição Exercício Clínica de Consultas Ágil
+4. Abra no localhost: http://localhost:3000/
+## Descrição Exercício:
 
 Você foi contratado para desenvolver um sistema de clínica de consultas no seu bairro.
 Seus vizinhos não estão se sentindo muito bem e gostariam de agendar consultas. Para
@@ -111,14 +109,10 @@ FORAM UTILIZADOS:
 <img align="center" alt="Ste-Mysql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> 
 <img align="center" alt="Ste-Nodejs" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
 </div>
-
 <br><br>
+
 ![/](https://img.shields.io/badge/%2F-ff1493?style=for-the-badge) ![thoughtworks](https://img.shields.io/badge/thoughtworks-1e3a5f?style=for-the-badge) 
 ![PucRS](https://img.shields.io/badge/PucRS-83d0f5?style=for-the-badge&logo=chipperci&logoColor=white) 
 ![Centro da Inovação da Escola Politécnica](https://img.shields.io/badge/Centro%20da%20Inovação%20da%20Escola%20Politécnica-4db8ff?style=for-the-badge) 
 ![Tecnopuc](https://img.shields.io/badge/Tecnopuc-808080?style=for-the-badge) 
 ![Rede Globo](https://img.shields.io/badge/Rede%20Globo-fd5e02?style=for-the-badge)
-
-
-
-

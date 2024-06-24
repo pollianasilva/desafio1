@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./assets/equipe.jpg);
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+h1, h2 {
+    color: #333333;
+}
+
+nav.navbar {
+    background-color: #0a4e5b; 
+}
+
+nav.navbar a {
+    color: #FFFFFF; 
+}
+
+nav.navbar a:hover {
+    color: #CCCCCC; 
+}
+
+
+footer#footer {
+    background-color: #0a4e5b; 
+    color: #FFFFFF; 
+    text-align: center;
+    padding-top: 5%; 
+    font-size: 14px; 
+}
+
+footer#footer a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+footer#footer a:hover {
+    color: #CCCCCC; 
+}
+
+footer#footer .bi {
+    font-size: 1.5rem; 
+    margin: 0 0px; 
+}
+
+footer#footer p {
+    margin-bottom: 5px; 
+}
+
+
+.container {
+    margin: 80px auto 20px; 
+    padding: 20px;
+    max-width: 800px;
+}
+
+form {
+    background-color: #ffffff48;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="date"], input[type="time"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #0a4e5b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000 !important; 
+    color: white;
+}
+
+
+
+a {
+    color: #0a4e5b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.success-message {
+    color: #28A745; 
+}
+
+.error-message {
+    color: #FF0000; 
+}
+
+
+.footer .media-social i {
+    margin: 0 10px;
+}
+

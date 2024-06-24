@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="assets/estetoscopio.png" type="image/x-icon">
+    <title>Clínica de Consulta Ágil</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #0a4e5b;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/exame-medico.png" width="50" height="50" alt="" style="margin-right: 10px;">Clínica de Consulta Ágil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#cadastrar"><i class="bi bi-person-plus-fill"></i> Cadastrar Paciente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#marcar"><i class="bi bi-calendar-plus"></i> Marcar Consulta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cancelar"><i class="bi bi-calendar-x"></i> Cancelar Consulta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h1>Bem-vindo à Clínica de Consultas Ágil</h1>
+        <p>Utilize o menu acima para navegar pelo sistema.</p>
+
+<!-- Cadastro de Paciente -->
+<section id="cadastrar">
+    <h2>Cadastrar Paciente</h2>
+    <form id="cadastroPaciente">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="text" class="form-control" id="telefone" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="background-color: #0a4e5b;">Cadastrar</button>
+    </form>
+    <p id="cadastroMessage" class="success-message"></p>
+</section>
+
+<!-- Marcação de Consultas -->
+<section id="marcar">
+    <h2>Marcar Consulta</h2>
+    <form id="marcacaoConsulta">
+        <div class="form-group">
+            <label for="paciente">Paciente:</label>
+            <select id="paciente" class="form-control" required>
+                <option value="">Selecione o Paciente</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" class="form-control" id="data" required>
+        </div>
+        <div class="form-group">
+            <label for="hora">Hora:</label>
+            <input type="time" class="form-control" id="hora" required>
+        </div>
+        <div class="form-group">
+            <label for="especialidade">Especialidade:</label>
+            <select id="especialidade" class="form-control" required>
+                <option value="">Selecione a Especialidade</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="background-color: #0a4e5b;">Marcar</button>
+    </form>
+    <p id="marcacaoMessage" class="success-message"></p>
+</section>
+
+<!-- Cancelamento de Consultas -->
+<section id="cancelar">
+    <h2>Cancelar Consulta</h2>
+    <form id="cancelamentoConsulta">
+        <div class="form-group">
+            <label for="agendamento">Agendamento:</label>
+            <select id="agendamento" class="form-control" required></select>
+        </div>
+        <button type="submit" class="btn btn-danger">Cancelar</button>
+    </form>
+    <p id="cancelamentoMessage" class="success-message"></p>
+</section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white py-3" id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">                    
+                    <a href="https://www.instagram.com/" target="_blank" class="text-white">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="text-white">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://www.whatsapp.com/" target="_blank" class="text-white">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" id="footer">
+            <p class="mb-1"><strong>Clínica Consulta Ágil</strong> - PUCRS, 2024 &copy; </p>
+            <p>By <a href="https://www.linkedin.com/in/polliana-silva/" target="_blank"
+                    class="text-white font-weight-bold">Polliana Silva</a></p>
+        </div>
+    </footer>
+    
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -2,7 +2,63 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Montserrat&size=30&pause=1000&color=ff69b4&random=false&width=435&lines=Clínica+de+Consultas+Ágil)](https://git.io/typing-svg)<br>
 ![Aceleradora Ágil](https://img.shields.io/badge/Aceleradora%20Ágil-ff69b4?style=for-the-badge&logoColor=white) 
 
-## Clínica de Consultas Ágil
+- Video Demostrativo:
+  
+
+https://github.com/pollianasilva/desafio1/assets/140568849/2377f92f-f57a-495a-a21d-3fa316b84146
+
+## Instruções: 
+Crie um novo banco de dados no MySQL e também configure sua senha no arquivo server.js
+```sql
+CREATE DATABASE clinica;
+USE clinica;
+
+CREATE TABLE IF NOT EXISTS pacientes (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(100) NOT NULL,
+telefone VARCHAR(15) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS especialidades (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(100) NOT NULL UNIQUE
+);
+
+INSERT INTO especialidades (nome) VALUES
+('Cardiologia'),
+('Dermatologia'),
+('Endocrinologia'),
+('Gastroenterologia'),
+('Neurologia'),
+('Oftalmologia'),
+('Ortopedia'),
+('Pediatria'),
+('Psiquiatria'),
+('Urologia');
+
+CREATE TABLE IF NOT EXISTS consultas (
+id INT AUTO_INCREMENT PRIMARY KEY,
+paciente_id INT,
+data DATE,
+hora TIME,
+especialidade_id INT,
+FOREIGN KEY (paciente_id) REFERENCES pacientes(id),
+FOREIGN KEY (especialidade_id) REFERENCES especialidades(id)
+);
+```
+
+- No terminal do VS code instale: 
+```Terminal
+npm install express mysql2 body-parser
+```
+- E após dê o comando para conectar o servidor ao banco de dados 
+```Terminal
+node server.js
+```
+- Abra  no local host: http://localhost:3000/
+
+
+## Descrição Exercício Clínica de Consultas Ágil
 
 Você foi contratado para desenvolver um sistema de clínica de consultas no seu bairro.
 Seus vizinhos não estão se sentindo muito bem e gostariam de agendar consultas. Para
@@ -54,56 +110,8 @@ FORAM UTILIZADOS:
 <img align="center" alt="Polly-bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"> 
 <img align="center" alt="Ste-Mysql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> 
 <img align="center" alt="Ste-Nodejs" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-</div><br> 
+</div>
 
-## Instruções: 
-Crie um novo banco de dados no MySQL e também configure sua senha no arquivo server.js
-```sql
-CREATE DATABASE clinica;
-USE clinica;
-
-CREATE TABLE IF NOT EXISTS pacientes (
-id INT AUTO_INCREMENT PRIMARY KEY,
-nome VARCHAR(100) NOT NULL,
-telefone VARCHAR(15) NOT NULL UNIQUE
-);
-
-CREATE TABLE IF NOT EXISTS especialidades (
-id INT AUTO_INCREMENT PRIMARY KEY,
-nome VARCHAR(100) NOT NULL UNIQUE
-);
-
-INSERT INTO especialidades (nome) VALUES
-('Cardiologia'),
-('Dermatologia'),
-('Endocrinologia'),
-('Gastroenterologia'),
-('Neurologia'),
-('Oftalmologia'),
-('Ortopedia'),
-('Pediatria'),
-('Psiquiatria'),
-('Urologia');
-
-CREATE TABLE IF NOT EXISTS consultas (
-id INT AUTO_INCREMENT PRIMARY KEY,
-paciente_id INT,
-data DATE,
-hora TIME,
-especialidade_id INT,
-FOREIGN KEY (paciente_id) REFERENCES pacientes(id),
-FOREIGN KEY (especialidade_id) REFERENCES especialidades(id)
-);
-```
-
-No terminal do VS code instale: 
-```Terminal
-npm install express mysql2 body-parser
-```
-E após dê o comando para conectar no banco de dados e abrir no local host: http://localhost:3000/
-```Terminal
-node server.js
-```
 <br><br>
 ![/](https://img.shields.io/badge/%2F-ff1493?style=for-the-badge) ![thoughtworks](https://img.shields.io/badge/thoughtworks-1e3a5f?style=for-the-badge) 
 ![PucRS](https://img.shields.io/badge/PucRS-83d0f5?style=for-the-badge&logo=chipperci&logoColor=white) 

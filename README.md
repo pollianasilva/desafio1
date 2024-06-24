@@ -2,11 +2,6 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Montserrat&size=30&pause=1000&color=ff69b4&random=false&width=435&lines=Clínica+de+Consultas+Ágil)](https://git.io/typing-svg)<br>
 ![Aceleradora Ágil](https://img.shields.io/badge/Aceleradora%20Ágil-ff69b4?style=for-the-badge&logoColor=white) 
 
-- Video Demostrativo:
-  
-
-https://github.com/pollianasilva/desafio1/assets/140568849/2377f92f-f57a-495a-a21d-3fa316b84146
-
 ## Instruções de Configuração: 
 1. Crie um novo banco de dados no MySQL e também configure sua senha no arquivo server.js
 ```sql
@@ -55,7 +50,15 @@ npm install express mysql2 body-parser
 ```Terminal
 node server.js
 ```
-4. Abra no localhost: http://localhost:3000/
+4. Abra no localhost:
+```Navegador
+http://localhost:3000/
+```
+
+- Video Demostrativo:  
+
+https://github.com/pollianasilva/desafio1/assets/140568849/2377f92f-f57a-495a-a21d-3fa316b84146
+
 ## Descrição Exercício:
 
 Você foi contratado para desenvolver um sistema de clínica de consultas no seu bairro.
